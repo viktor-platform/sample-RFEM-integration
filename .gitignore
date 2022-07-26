@@ -1,0 +1,6 @@
+__pycache__
+.vscode
+venv
+dev-requirements.txt
+pyproject.toml
+run_code_quality_tools.sh

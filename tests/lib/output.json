@@ -1,0 +1,584 @@
+{
+    "materials": [
+        {
+            "tag": 1,
+            "name": "S355"
+        }
+    ],
+    "sections": [
+        {
+            "tag": 1,
+            "material": "SHS 50x50x4"
+        },
+        {
+            "tag": 2,
+            "material": "SHS 50x50x4"
+        },
+        {
+            "tag": 3,
+            "material": "SHS 50x50x4"
+        },
+        {
+            "tag": 4,
+            "material": "SHS 50x50x4"
+        }
+    ],
+    "nodes": [
+        {
+            "tag": 1,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 7.0
+        },
+        {
+            "tag": 2,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 6.0
+        },
+        {
+            "tag": 3,
+            "x": 1.0,
+            "y": 0.0,
+            "z": 7.0
+        },
+        {
+            "tag": 4,
+            "x": 1.0,
+            "y": 0.0,
+            "z": 6.0
+        },
+        {
+            "tag": 5,
+            "x": 2.0,
+            "y": 0.0,
+            "z": 7.0
+        },
+        {
+            "tag": 6,
+            "x": 2.0,
+            "y": 0.0,
+            "z": 6.0
+        },
+        {
+            "tag": 7,
+            "x": 3.0,
+            "y": 0.0,
+            "z": 7.0
+        },
+        {
+            "tag": 8,
+            "x": 3.0,
+            "y": 0.0,
+            "z": 6.0
+        },
+        {
+            "tag": 9,
+            "x": 4.0,
+            "y": 0.0,
+            "z": 7.0
+        },
+        {
+            "tag": 10,
+            "x": 4.0,
+            "y": 0.0,
+            "z": 6.0
+        },
+        {
+            "tag": 11,
+            "x": 5.0,
+            "y": 0.0,
+            "z": 7.0
+        },
+        {
+            "tag": 12,
+            "x": 5.0,
+            "y": 0.0,
+            "z": 6.0
+        },
+        {
+            "tag": 13,
+            "x": 6.0,
+            "y": 0.0,
+            "z": 7.0
+        },
+        {
+            "tag": 14,
+            "x": 6.0,
+            "y": 0.0,
+            "z": 6.0
+        },
+        {
+            "tag": 15,
+            "x": 7.0,
+            "y": 0.0,
+            "z": 7.0
+        },
+        {
+            "tag": 16,
+            "x": 7.0,
+            "y": 0.0,
+            "z": 6.0
+        },
+        {
+            "tag": 17,
+            "x": 8.0,
+            "y": 0.0,
+            "z": 7.0
+        },
+        {
+            "tag": 18,
+            "x": 8.0,
+            "y": 0.0,
+            "z": 6.0
+        },
+        {
+            "tag": 19,
+            "x": 9.0,
+            "y": 0.0,
+            "z": 7.0
+        },
+        {
+            "tag": 20,
+            "x": 9.0,
+            "y": 0.0,
+            "z": 6.0
+        },
+        {
+            "tag": 21,
+            "x": 10.0,
+            "y": 0.0,
+            "z": 7.0
+        },
+        {
+            "tag": 22,
+            "x": 10.0,
+            "y": 0.0,
+            "z": 6.0
+        },
+        {
+            "tag": 23,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        {
+            "tag": 24,
+            "x": 10.0,
+            "y": 0.0,
+            "z": 0.0
+        }
+    ],
+    "members": [
+        {
+            "tag": 1,
+            "start_node": 1,
+            "end_node": 21,
+            "rotation_angle": 0.0,
+            "start_section": 1,
+            "end_section": 1,
+            "force": {
+                "N": -26.81,
+                "V_y": 0.0,
+                "V_z": -0.09,
+                "M_T": 0.0,
+                "M_y": -0.03,
+                "M_z": 0.0
+            }
+        },
+        {
+            "tag": 2,
+            "start_node": 2,
+            "end_node": 22,
+            "rotation_angle": 0.0,
+            "start_section": 1,
+            "end_section": 1,
+            "force": {
+                "N": 9.96,
+                "V_y": 0.0,
+                "V_z": -0.13,
+                "M_T": 0.0,
+                "M_y": -0.06,
+                "M_z": 0.0
+            }
+        },
+        {
+            "tag": 3,
+            "start_node": 3,
+            "end_node": 4,
+            "rotation_angle": 0.0,
+            "start_section": 2,
+            "end_section": 2,
+            "force": {
+                "N": 8.78,
+                "V_y": 0.0,
+                "V_z": -0.09,
+                "M_T": 0.0,
+                "M_y": -0.05,
+                "M_z": 0.0
+            }
+        },
+        {
+            "tag": 4,
+            "start_node": 5,
+            "end_node": 6,
+            "rotation_angle": 0.0,
+            "start_section": 2,
+            "end_section": 2,
+            "force": {
+                "N": 6.61,
+                "V_y": 0.0,
+                "V_z": -0.07,
+                "M_T": 0.0,
+                "M_y": -0.03,
+                "M_z": 0.0
+            }
+        },
+        {
+            "tag": 5,
+            "start_node": 7,
+            "end_node": 8,
+            "rotation_angle": 0.0,
+            "start_section": 2,
+            "end_section": 2,
+            "force": {
+                "N": 4.39,
+                "V_y": 0.0,
+                "V_z": -0.05,
+                "M_T": 0.0,
+                "M_y": -0.02,
+                "M_z": 0.0
+            }
+        },
+        {
+            "tag": 6,
+            "start_node": 9,
+            "end_node": 10,
+            "rotation_angle": 0.0,
+            "start_section": 2,
+            "end_section": 2,
+            "force": {
+                "N": 2.18,
+                "V_y": 0.0,
+                "V_z": -0.02,
+                "M_T": 0.0,
+                "M_y": -0.01,
+                "M_z": 0.0
+            }
+        },
+        {
+            "tag": 7,
+            "start_node": 11,
+            "end_node": 12,
+            "rotation_angle": 0.0,
+            "start_section": 2,
+            "end_section": 2,
+            "force": {
+                "N": 1.03,
+                "V_y": 0.0,
+                "V_z": 0.0,
+                "M_T": 0.0,
+                "M_y": 0.0,
+                "M_z": 0.0
+            }
+        },
+        {
+            "tag": 8,
+            "start_node": 13,
+            "end_node": 14,
+            "rotation_angle": 0.0,
+            "start_section": 2,
+            "end_section": 2,
+            "force": {
+                "N": 2.18,
+                "V_y": 0.0,
+                "V_z": 0.02,
+                "M_T": 0.0,
+                "M_y": -0.01,
+                "M_z": 0.0
+            }
+        },
+        {
+            "tag": 9,
+            "start_node": 15,
+            "end_node": 16,
+            "rotation_angle": 0.0,
+            "start_section": 2,
+            "end_section": 2,
+            "force": {
+                "N": 4.39,
+                "V_y": 0.0,
+                "V_z": 0.05,
+                "M_T": 0.0,
+                "M_y": -0.02,
+                "M_z": 0.0
+            }
+        },
+        {
+            "tag": 10,
+            "start_node": 17,
+            "end_node": 18,
+            "rotation_angle": 0.0,
+            "start_section": 2,
+            "end_section": 2,
+            "force": {
+                "N": 6.61,
+                "V_y": 0.0,
+                "V_z": 0.07,
+                "M_T": 0.0,
+                "M_y": -0.03,
+                "M_z": 0.0
+            }
+        },
+        {
+            "tag": 11,
+            "start_node": 19,
+            "end_node": 20,
+            "rotation_angle": 0.0,
+            "start_section": 2,
+            "end_section": 2,
+            "force": {
+                "N": 8.78,
+                "V_y": 0.0,
+                "V_z": 0.09,
+                "M_T": 0.0,
+                "M_y": -0.05,
+                "M_z": 0.0
+            }
+        },
+        {
+            "tag": 14,
+            "start_node": 2,
+            "end_node": 3,
+            "rotation_angle": 0.0,
+            "start_section": 3,
+            "end_section": 3,
+            "force": {
+                "N": -14.06,
+                "V_y": 0.0,
+                "V_z": -0.02,
+                "M_T": 0.0,
+                "M_y": -0.01,
+                "M_z": 0.0
+            }
+        },
+        {
+            "tag": 15,
+            "start_node": 4,
+            "end_node": 5,
+            "rotation_angle": 0.0,
+            "start_section": 3,
+            "end_section": 3,
+            "force": {
+                "N": -10.98,
+                "V_y": 0.0,
+                "V_z": -0.04,
+                "M_T": 0.0,
+                "M_y": -0.01,
+                "M_z": 0.0
+            }
+        },
+        {
+            "tag": 16,
+            "start_node": 6,
+            "end_node": 7,
+            "rotation_angle": 0.0,
+            "start_section": 3,
+            "end_section": 3,
+            "force": {
+                "N": -7.85,
+                "V_y": 0.0,
+                "V_z": -0.03,
+                "M_T": 0.0,
+                "M_y": 0.0,
+                "M_z": 0.0
+            }
+        },
+        {
+            "tag": 17,
+            "start_node": 8,
+            "end_node": 9,
+            "rotation_angle": 0.0,
+            "start_section": 3,
+            "end_section": 3,
+            "force": {
+                "N": -4.72,
+                "V_y": 0.0,
+                "V_z": -0.03,
+                "M_T": 0.0,
+                "M_y": 0.0,
+                "M_z": 0.0
+            }
+        },
+        {
+            "tag": 18,
+            "start_node": 10,
+            "end_node": 11,
+            "rotation_angle": 0.0,
+            "start_section": 3,
+            "end_section": 3,
+            "force": {
+                "N": -1.59,
+                "V_y": 0.0,
+                "V_z": -0.03,
+                "M_T": 0.0,
+                "M_y": 0.01,
+                "M_z": 0.0
+            }
+        },
+        {
+            "tag": 19,
+            "start_node": 11,
+            "end_node": 14,
+            "rotation_angle": 0.0,
+            "start_section": 3,
+            "end_section": 3,
+            "force": {
+                "N": -1.59,
+                "V_y": 0.0,
+                "V_z": -0.03,
+                "M_T": 0.0,
+                "M_y": 0.01,
+                "M_z": 0.0
+            }
+        },
+        {
+            "tag": 20,
+            "start_node": 13,
+            "end_node": 16,
+            "rotation_angle": 0.0,
+            "start_section": 3,
+            "end_section": 3,
+            "force": {
+                "N": -4.72,
+                "V_y": 0.0,
+                "V_z": -0.02,
+                "M_T": 0.0,
+                "M_y": 0.0,
+                "M_z": 0.0
+            }
+        },
+        {
+            "tag": 21,
+            "start_node": 15,
+            "end_node": 18,
+            "rotation_angle": 0.0,
+            "start_section": 3,
+            "end_section": 3,
+            "force": {
+                "N": -7.85,
+                "V_y": 0.0,
+                "V_z": -0.02,
+                "M_T": 0.0,
+                "M_y": 0.0,
+                "M_z": 0.0
+            }
+        },
+        {
+            "tag": 22,
+            "start_node": 17,
+            "end_node": 20,
+            "rotation_angle": 0.0,
+            "start_section": 3,
+            "end_section": 3,
+            "force": {
+                "N": -10.98,
+                "V_y": 0.0,
+                "V_z": -0.01,
+                "M_T": 0.0,
+                "M_y": -0.01,
+                "M_z": 0.0
+            }
+        },
+        {
+            "tag": 23,
+            "start_node": 19,
+            "end_node": 22,
+            "rotation_angle": 0.0,
+            "start_section": 3,
+            "end_section": 3,
+            "force": {
+                "N": -14.06,
+                "V_y": 0.0,
+                "V_z": -0.04,
+                "M_T": 0.0,
+                "M_y": -0.01,
+                "M_z": 0.0
+            }
+        },
+        {
+            "tag": 25,
+            "start_node": 23,
+            "end_node": 1,
+            "rotation_angle": 0.0,
+            "start_section": 4,
+            "end_section": 4,
+            "force": {
+                "N": -12.56,
+                "V_y": 0.0,
+                "V_z": -0.05,
+                "M_T": 0.0,
+                "M_y": -0.05,
+                "M_z": 0.0
+            }
+        },
+        {
+            "tag": 26,
+            "start_node": 24,
+            "end_node": 21,
+            "rotation_angle": 0.0,
+            "start_section": 4,
+            "end_section": 4,
+            "force": {
+                "N": -12.56,
+                "V_y": 0.0,
+                "V_z": 0.01,
+                "M_T": 0.0,
+                "M_y": -0.03,
+                "M_z": 0.0
+            }
+        }
+    ],
+    "simulation": {
+        "Self-Weight": {
+            "tag": 1,
+            "force": 1
+        }
+    },
+    "info": {
+        "Nodes": 24,
+        "Members": 23,
+        "Weight": 311.75320642917006,
+        "Cost Estimation": null
+    },
+    "summary": {
+        "Loads": {
+            "Sum of loads in X [kN]": "0.00",
+            "Sum of support forces in X [kN]": "0.00",
+            "Sum of loads in Y [kN]": "0.00",
+            "Sum of support forces in Y [kN]": "0.00",
+            "Sum of loads in Z [kN]": "27.12",
+            "Sum of support forces in Z [kN]": "27.12"
+        },
+        "Reactions": {
+            "Resultant of reactions about X [kNm]": "0.00",
+            "Resultant of reactions about Y [kNm]": "0.00",
+            "Resultant of reactions about Z [kNm]": "0.00"
+        },
+        "Deformations": {
+            "Maximum displacement in X-direction [mm]": "-1.7",
+            "Maximum displacement in Y-direction [mm]": "0.0",
+            "Maximum displacement in Z-direction [mm]": "5.2",
+            "Maximum vectorial displacement [mm]": "5.2",
+            "Maximum rotation about X-axis [mrad]": "0.0",
+            "Maximum rotation about Y-axis [mrad]": "-1.6",
+            "Maximum rotation about Z-axis [mrad]": "0.0"
+        },
+        "Statistics": {
+            "Maximum value of element of stiffness matrix on diagonal [--]": "2.34e+09",
+            "Minimum value of element of stiffness matrix on diagonal [--]": "130523.00",
+            "Stiffness matrix determinant [--]": "1.36e+8341",
+            "Infinity Norm [--]": "4.90e+09"
+        }
+    }
+}

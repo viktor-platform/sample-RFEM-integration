@@ -1,0 +1,21 @@
+# CONFIGURATION FILE FOR VIKTOR WORKER TO RUN GENERIC EXECUTABLE / SCRIPT
+#
+# > Required keys: executables (dictionary with name of executable as key containing key-value pairs for path, arguments and working directory) and maxParallelProcesses
+# > The key of executable is used to distinguish between different jobs that can be transferred to the worker
+# > Use either double quotes: "example", or single quotes: 'example' 
+# > Double quotes require special characters to be escaped, whereas single quotes can be used for raw strings
+# > Trailing slashes are not required in paths
+# > If you do not want to call an executable set executables to: {}
+# > If the executable does not take any additional arguments specify arguments as an empty sequence: []
+#
+# Replace the path to where create_model.bat is located, can be any location with the right permissions
+executables:
+  run_RFEM: 
+    path: 'C:\Program Files\Viktor\viktor for mkoertshuis generic v5.1.3\viktor for mkoertshuis generic v5.1.3\create_model.bat'  
+    arguments: ['0']
+    workingDirectoryPath: 'C:\Program Files\Viktor\viktor for mkoertshuis generic v5.1.3\viktor for mkoertshuis generic v5.1.3'
+  run_OPT:
+    path: 'C:\Program Files\Viktor\viktor for mkoertshuis generic v5.1.3\viktor for mkoertshuis generic v5.1.3\create_model.bat'  
+    arguments: ['1']
+    workingDirectoryPath: 'C:\Program Files\Viktor\viktor for mkoertshuis generic v5.1.3\viktor for mkoertshuis generic v5.1.3'
+maxParallelProcesses: 1 # must be 1 if any of the above workingDirectoryPath is not '' (stateful path)
