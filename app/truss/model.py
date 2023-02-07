@@ -80,7 +80,7 @@ class Member(Line):
         return f"{self.tag}:({self.start_node},{self.end_node})"
 
 
-def unity_check(force: float, section_name: str, allowed_stress: float) -> float:
+def unity_check(force: float, section_name: str, allowed_stress: float, rounded_val=3) -> float:
     """Returns the unity check factor from the results.
 
     Args:
@@ -91,8 +91,7 @@ def unity_check(force: float, section_name: str, allowed_stress: float) -> float
     force *= 1000  # N
     area = profile_properties[section_name]["area"]  # m^2
     calculated_stress = force / area
-    return np.abs(calculated_stress / allowed_stress)
-
+    return round(float(np.abs(calculated_stress / allowed_stress)), rounded_val)
 
 @memoize
 def send2rfem(model: str, selection: int = 0) -> str:
@@ -139,7 +138,7 @@ def create_label(member: Member, key: str, decimals: int = 2) -> Label:
 
     def avg(v1, v2):
         """Average of two points"""
-        return (v2 + v1) / 2
+        return float((v2 + v1) / 2)
 
     sp = member.start_point
     ep = member.end_point
@@ -255,6 +254,8 @@ class Model:
         for node in model_dict["nodes"]:
             self.nodes.append(Node(tag=node["tag"], x=node["x"], y=node["y"], z=node["z"]))
         for member in model_dict["members"]:
+            # if not member.get('force'):
+            #     member['force'] = {'N': None, 'V_y': None, 'V_z': None, 'M_T': None, 'M_y': None, 'M_z': None}
             self.members.append(
                 Member(
                     nodes=self.nodes,
@@ -263,7 +264,7 @@ class Model:
                     end_node=member["end_node"],
                     start_section=member["start_section"],
                     end_section=member["end_section"],
-                    force=member["force"],
+                    force=member.get('force'),
                 )
             )
 
@@ -271,6 +272,8 @@ class Model:
         """From all the forces on the members for a certain key, get the maximum"""
         x = -np.inf
         for member in self.members:
+            if not member.force:
+                continue
             y = member.force[key]
             if y > x:
                 x = y
@@ -280,6 +283,8 @@ class Model:
         """From all the forces on the members for a certain key, get the minimum"""
         x = np.inf
         for member in self.members:
+            if not member.force:
+                continue
             y = member.force[key]
             if y < x:
                 x = y
@@ -290,6 +295,8 @@ class Model:
         allowed_stress = material_allowed_stress[material]["low"] * 1e6  # Pa = N/m^2
         allowed_stress *= safety_factor
         for member in self.members:
+            if not member.force:
+                continue
             member.force["UC"] = unity_check(
                 member.force["N"], self.sections[member.start_section - 1]["material"], allowed_stress
             )

@@ -27,6 +27,7 @@ from .model import unity_check
 class Controller(ViktorController):
     label = "RFEM"
     parametrization = BuildingParametrization
+    viktor_enforce_field_constraints = True
 
     @GeometryView("Design", duration_guess=3)
     def visualize_truss(self, params, **kwargs):
@@ -70,7 +71,7 @@ class Controller(ViktorController):
         x = np.linspace(l_min, l_max, steps)
         for length in x:
             # Override the length parameter
-            params.step_design.frame.height_panels = length
+            params.step_design.frame.height_panels = round(length, 2)
             params_used.append(params.copy())
             model = build_model_from_params(params)
             models.append(model.to_dict())
