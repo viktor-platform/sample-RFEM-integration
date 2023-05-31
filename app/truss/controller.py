@@ -14,7 +14,7 @@ from viktor.views import GeometryAndDataResult
 from viktor.views import GeometryAndDataView
 from viktor.views import GeometryResult
 from viktor.views import GeometryView
-from viktor.views import SVGResult
+from viktor.views import ImageResult
 
 from .constants import material_allowed_stress
 from .datagroups_and_visualisations import build_model_from_params
@@ -107,7 +107,7 @@ class Controller(ViktorController):
         ax.set_xlabel("Height panels")
         ax.set_ylabel("UC")
         plt.savefig(io_, format="svg")
-        image = SVGResult(io_)
+        image = ImageResult(io_)
 
         # Return results
         return OptimizationResult(

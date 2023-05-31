@@ -7,7 +7,7 @@ from typing import Union
 import numpy as np
 from munch import Munch
 
-from viktor.core import UserException
+from viktor.core import UserError
 from viktor.external.generic import GenericAnalysis
 from viktor.geometry import Color
 from viktor.geometry import Line
@@ -120,7 +120,7 @@ def send2rfem(model: str, selection: int = 0) -> str:
     try:
         generic_analysis.execute(timeout=600)
     except TimeoutError as err:
-        raise UserException(err)
+        raise UserError(err)
     output_file = generic_analysis.get_output_file("output.json")
     json_str = output_file.read()
     json_str = json_str.decode("utf-8")
