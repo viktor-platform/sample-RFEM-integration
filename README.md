@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/SDK-v14.0.0-blue) <Please check version is the same as specified in requirements.txt>
+
 # VIKTOR interaction with RFEM
 
 This sample application is made to showcase the interaction between VIKTOR and RFEM. It builds a model representing a truss, uses a VIKTOR worker running in an environment where RFEM is running with its web service enabled and visualizes the calculations inside the VIKTOR interface.
