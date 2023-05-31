@@ -11,3 +11,6 @@ This application uses [RFEM](https://www.dlubal.com/en). RFEM needs to be runnin
 ## The Worker
 
 To interact with RFEM using the VIKTOR application we use the VIKTOR worker. Some steps need to be taken to make it work. These steps are described [here](app/lib/README.md).
+
+# App structure 
+This is an simple app.
